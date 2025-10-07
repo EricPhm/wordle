@@ -1,0 +1,75 @@
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #bfbfbf;
+    text-align: center;
+    text-shadow: 0 0 10px #38bdf8, 0 0 20px #5673cc;
+    animation: slideIn 1s ease-out forwards;
+    margin-bottom: 20px;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tile {
+    color: #2d2d2d;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    display: flex;
+    background: rgba(156, 156, 156, 0.778);
+    font-weight: 1000;
+}
+
+.button {
+    background: transparent;
+    color: rgb(195, 195, 195);
+    padding: 8px 24px;
+    margin: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2 ease;
+    text-shadow: 0 0 10px #0da3e3, 0 0 20px #9333ea;
+    width: 200px;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.line {
+    display: flex;
+    gap: 5px;
+    font-size: 24px;
+}
+
+.board {
+    flex-direction: column;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.correct {
+    background-color: lightgreen;
+}
+
+.partial {
+    background-color: lightgoldenrodyellow;
+}
+
+.incorrect {
+    background-color: gray;
+}
