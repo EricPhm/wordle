@@ -21,7 +21,7 @@ This project replicates the popular daily word guessing game, allowing users to 
   TypeScript hints for type safety in logic functions
 
 📸 Preview
-  ![Wordle Preview](./assets/wordleDemo.png)
+  ./assets/wordleDemo.png
 
 📂 Project Structure
 📦 wordle-clone
