@@ -1,54 +1,47 @@
-# React + TypeScript + Vite
+🟩 Wordle Clone (React + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, interactive Wordle clone built using React and JavaScript (with TypeScript typings).
+This project replicates the popular daily word guessing game, allowing users to guess a random 5-letter word within 6 tries.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🧠 Features
+  🎮   Play a 6-round word guessing game
+  ⌨️   Keyboard input for letters, backspace, and enter
+  🟨   Letter feedback (correct position, wrong position, not in word)
+  🔁   “Try Again” button to restart with a new random word
+  💡   “Show Answer” button for revealing the correct word
+  ⚡   Random word generation from a local words.js file
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🛠️ Tech Stack
+  React (functional components, hooks)
+  JavaScript (ES6+)
+  CSS for styling
+  Vite for fast development and build
+  TypeScript hints for type safety in logic functions
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+📸 Preview
+  ![Wordle Preview](./assets/wordleDemo.png)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+📂 Project Structure
+📦 wordle-clone
+├── src/
+│   ├── components/
+│   │   └── Line.jsx       # Displays each guess row
+│   ├── words.js           # Contains the word list
+│   ├── App.jsx            # Main game logic
+│   ├── App.css            # Styling
+│   └── main.jsx           # Entry point
+├── public/
+│   └── assets/            # Images (preview, icons, etc.)
+├── package.json
+└── README.md
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+🧩 How It Works
+  A random 5-letter word is selected at game start.
+  Players type letters on their keyboard:
+    Backspace deletes a letter.
+    Enter submits the guess.
+  If the guess matches the word, the game ends with a win message.
+  The player can reveal the answer or try again at any time.
