@@ -22,7 +22,7 @@ This project replicates the popular daily word guessing game, allowing users to 
 
 📸 Preview
 
-![Wordle Screenshot](./assets/[wordleDemo](../src/assets/wordleDemo.png)
+![Wordle Screenshot](./assets/[wordleDemo](./src/assets/wordleDemo.png)
 
 ---
 
