@@ -21,7 +21,10 @@ This project replicates the popular daily word guessing game, allowing users to 
   TypeScript hints for type safety in logic functions
 
 📸 Preview
-  ./assets/wordleDemo.png
+
+![Wordle Screenshot](./assets/wordleDemo.png)
+
+---
 
 📂 Project Structure
 📦 wordle-clone
@@ -38,10 +41,5 @@ This project replicates the popular daily word guessing game, allowing users to 
 └── README.md
 
 
-🧩 How It Works
-  A random 5-letter word is selected at game start.
-  Players type letters on their keyboard:
-    Backspace deletes a letter.
-    Enter submits the guess.
   If the guess matches the word, the game ends with a win message.
   The player can reveal the answer or try again at any time.
